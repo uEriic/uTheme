@@ -1,0 +1,30 @@
+{
+  "name": "uTheme",
+  "description": "Meu tema para vscode.",
+  "displayName": "uTheme",
+  "version": "0.0.1",
+  "icon": "assets/icon.png",
+  "keywords": ["theme", "vsc-theme", "utheme-vscode"],
+  "publisher": "https://github.com/uEriic",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "uTheme - Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-utheme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package --no-yarn",
+    "publish": "vsce publish --no-yarn"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
+}
